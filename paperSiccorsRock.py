@@ -1,9 +1,9 @@
 #Make a Rock-Paper-Scissors game user vs computer
+import random #random module
 scoreComp = 0 #set variables to 0 
 scoreUsr = 0
 while True:
     try:
-        import random #random module
         user = (int(input("Welcome to paper, scissors, rock game.\nEnter 1 for paper.\nEnter 2 for scissors\nEnter 3 for rock\n"))) - 1 #give user instructions
         comp = random.randrange(0, 3, 1) #get a random int
         option = ['Paper', 'Scissors', 'Rock'] #list with string options
